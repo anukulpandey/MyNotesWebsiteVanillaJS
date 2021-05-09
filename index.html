@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+          .btn-outline-success {
+    color: #000000;
+    border-color: #000000;
+}
+.btn-outline-success :hover{
+    color: #ffffff;
+    background-color: darkmagenta;
+    border-color: #ffffff;
+}
+        </style>
+</head>
+
+
+<body style="background-color: #670079;">
+
+
+    <nav class="navbar navbar navbar-dark bg-dark" style="background-color: #5d0769!important;">
+        <a class="navbar-brand" style="color: aliceblue;">My Notes</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  id="searchText">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+      <div class="header">
+      <h1 style="margin-left: 34vw; color: cornsilk;">Welcome to My Notes </h1>
+      <h4 style="margin-left: 32vw;color: cornsilk">Your personal place of keeping your notes.</h4>
+    </div>
+         <div class="container" id ="input-field">
+      <div class="card" style="width: 80%rem;">
+        <div class="card-body">
+          <h5 class="card-title">Note</h5>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="textHere" id="textHere">ENTER YOUR TEXT HERE</label>
+            <textarea class="form-control" id="textArea" rows="3"></textarea>
+          </div>
+          <a href="#" class="btn btn-primary addNote" id="addNote">Add Note</a>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="notes">
+        <!-- <div class="card" style="width: 18rem;margin-top: 10vh;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
+</body>
+
+</html>
